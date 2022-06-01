@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>userDetails</title>
+</head>
+<body>
+  
+      {% for user in userDetails %}
+      
+         <h3>{{user['name']}}</h3>
+         <h3>{{user['email']}}</h3>
+         <h3>{{user['pwd']}}</h3>
+         <h3>{{user['confirm']}}</h3>
+         <h3>{{user['image']}}</h3>
+      
+      {% endfor %}
+      
+</body>
+</html>

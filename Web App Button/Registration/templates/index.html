@@ -1,0 +1,207 @@
+<!DOCTYPE html> 
+  <head> 
+     <title>LED Status</title> 
+     <link rel="stylesheet" href='../static/style.css'/> 
+	 <link rel="stylesheet" href="btn_stylee.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v4-font-face.min.css">
+  </head> 
+  <body> 
+	
+		
+		<h3 class="button1"> RED LED ==>  {{ ledRed  }}  ==>   
+			{% if  (ledRed   == 1) and (ledredcheck==1)%} 
+				<a href="/ledRed/off"><button style="height: 200px;
+					width: 200px;
+					-webkit-appearance: none;
+					box-shadow: 
+					10px -10px 15px rgba(255,255,255,0.5),
+					10px 10px 15px rgba(70,70,70,0.12);
+					position:absolute;
+					transform: translate(-50%,-50%);
+					top: 65%;
+					left: 8%;
+					border-radius: 50%;
+					border: 8px solid #ececec;
+					outline: none;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+					font-family: fontAwesome;
+					content: '\f011';
+					color: #0fc70f;
+					font-size: 70px;"><i class="fa fa-power-off"></i></button></a>
+			{% elif (ledRed   == 0) and (ledredcheck==1)%} 
+				<a href="/ledRed/on"><button style="height: 200px;
+					width: 200px;
+					-webkit-appearance: none;
+					box-shadow: 
+					10px -10px 15px rgba(255,255,255,0.5),
+					10px 10px 15px rgba(70,70,70,0.12);
+					position:absolute;
+					transform: translate(-50%,-50%);
+					top: 65%;
+					left: 8%;
+					border-radius: 50%;
+					border: 8px solid #ececec;
+					outline: none;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+					font-family: fontAwesome;
+					content: '\f011';
+					color: #737774;
+					font-size: 70px;"><i class="fa fa-power-off"></i></button></a> 
+			{% endif %}	 
+		</h3> 
+		<h3> YLW LED ==>  {{ ledYlw  }}  ==> 
+			{% if  (ledYlw   == 1) and (ledYlwcheck==1)%}
+			<a href="/ledYlw/off"><button style="height: 200px;
+				width: 200px;
+				-webkit-appearance: none;
+				box-shadow: 
+				10px -10px 15px rgba(255,255,255,0.5),
+				10px 10px 15px rgba(70,70,70,0.12);
+				position:absolute;
+				transform: translate(-50%,-50%);
+				top: 65%;
+				left: 25%;
+				border-radius: 50%;
+				border: 8px solid #ececec;
+				outline: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				font-family: fontAwesome;
+				content: '\f011';
+				color: #0fc70f;
+				font-size: 70px;"><i class="fa fa-power-off"></i></button></a>
+		{% elif (ledYlw   == 0) and (ledYlwcheck==1)%} 
+			<a href="/ledYlw/on"><button style="height: 200px;
+				width: 200px;
+				-webkit-appearance: none;
+				box-shadow: 
+				10px -10px 15px rgba(255,255,255,0.5),
+				10px 10px 15px rgba(70,70,70,0.12);
+				position:absolute;
+				transform: translate(-50%,-50%);
+				top: 65%;
+				left: 25%;
+				border-radius: 50%;
+				border: 8px solid #ececec;
+				outline: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				font-family: fontAwesome;
+				content: '\f011';
+				color: #737774;
+				font-size: 70px;"><i class="fa fa-power-off"></i></button></a>
+			{% endif %}	
+		  
+			
+		</h3> 
+		<h3> GRN LED ==>  {{ ledGrn  }}  ==>
+			{% if  (ledGrn   == 1) and (ledGrncheck==1)%}
+			<a href="/ledGrn/off"><button style="height: 200px;
+				width: 200px;
+				-webkit-appearance: none;
+				box-shadow: 
+				10px -10px 15px rgba(255,255,255,0.5),
+				10px 10px 15px rgba(70,70,70,0.12);
+				position:absolute;
+				transform: translate(-50%,-50%);
+				top: 65%;
+				left: 42%;
+				border-radius: 50%;
+				border: 8px solid #ececec;
+				outline: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				font-family: fontAwesome;
+				content: '\f011';
+				color: #0fc70f;
+				font-size: 70px;"><i class="fa fa-power-off"></i></button></a>
+		{% elif (ledGrn   == 0) and (ledGrncheck==1)%} 
+			<a href="/ledGrn/on"><button style="height: 200px;
+				width: 200px;
+				-webkit-appearance: none;
+				box-shadow: 
+				10px -10px 15px rgba(255,255,255,0.5),
+				10px 10px 15px rgba(70,70,70,0.12);
+				position:absolute;
+				transform: translate(-50%,-50%);
+				top: 65%;
+				left: 42%;
+				border-radius: 50%;
+				border: 8px solid #ececec;
+				outline: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				font-family: fontAwesome;
+				content: '\f011';
+				color: #737774;
+				font-size: 70px;"><i class="fa fa-power-off"></i></button></a>
+			{% endif %}	
+		
+		</h3> 
+
+		<h3> YLW LED ==>  {{ ledBlu  }}  ==> 
+			{% if  (ledBlu   == 1) and (ledBlucheck==1)%}
+			<a href="/ledBlu/off"><button style="height: 200px;
+				width: 200px;
+				-webkit-appearance: none;
+				box-shadow: 
+				10px -10px 15px rgba(255,255,255,0.5),
+				10px 10px 15px rgba(70,70,70,0.12);
+				position:absolute;
+				transform: translate(-50%,-50%);
+				top: 65%;
+				left: 59%;
+				border-radius: 50%;
+				border: 8px solid #ececec;
+				outline: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				font-family: fontAwesome;
+				content: '\f011';
+				color: #0fc70f;
+				font-size: 70px;"><i class="fa fa-power-off"></i></button></a>
+		{% elif (ledBlu   == 0) and (ledBlucheck==1)%} 
+			<a href="/ledBlu/on"><button style="height: 200px;
+				width: 200px;
+				-webkit-appearance: none;
+				box-shadow: 
+				10px -10px 15px rgba(255,255,255,0.5),
+				10px 10px 15px rgba(70,70,70,0.12);
+				position:absolute;
+				transform: translate(-50%,-50%);
+				top: 65%;
+				left: 59%;
+				border-radius: 50%;
+				border: 8px solid #ececec;
+				outline: none;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				cursor: pointer;
+				font-family: fontAwesome;
+				content: '\f011';
+				color: #737774;
+				font-size: 70px;"><i class="fa fa-power-off"></i></button></a>
+			{% endif %}	
+		
+		</h3> 
+		
+  </body> 
+</html>

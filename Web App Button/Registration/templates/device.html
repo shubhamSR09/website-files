@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title><button></button></title>
+	<link rel="stylesheet" href="btn_stylee.css">
+	<link rel="stylesheet" href='../static/style.css'/> 
+	 <link rel="stylesheet" href="btn_stylee.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v4-font-face.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v4-font-face.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v4-font-face.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/css/main.css">
+</head>
+
+<div class="w3-panel w3-padding-large">
+	<div class="w3-container w3-white w3-card w3-hover-shadow w3-half w3-section w3-round-large">
+		<h3 class="button1"> RED LED ==>  {{ ledRed  }}  ==>   
+			{% if  (ledRed   == 1) and (ledredcheck==1)%} 
+				<a href="/ledRed/off"><button style="height: 200px;
+					width: 200px;
+					-webkit-appearance: none;
+					box-shadow: 
+					10px -10px 15px rgba(255,255,255,0.5),
+					10px 10px 15px rgba(70,70,70,0.12);
+					position:absolute;
+					transform: translate(-50%,-50%);
+					top: 65%;
+					left: 8%;
+					border-radius: 50%;
+					border: 8px solid #ececec;
+					outline: none;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+					font-family: fontAwesome;
+					content: '\f011';
+					color: #0fc70f;
+					font-size: 70px;"><i class="fa fa-power-off"></i></button></a>
+			{% elif (ledRed   == 0) and (ledredcheck==1)%} 
+				<a href="/ledRed/on"><button style="height: 200px;
+					width: 200px;
+					-webkit-appearance: none;
+					box-shadow: 
+					10px -10px 15px rgba(255,255,255,0.5),
+					10px 10px 15px rgba(70,70,70,0.12);
+					position:absolute;
+					transform: translate(-50%,-50%);
+					top: 65%;
+					left: 8%;
+					border-radius: 50%;
+					border: 8px solid #ececec;
+					outline: none;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					cursor: pointer;
+					font-family: fontAwesome;
+					content: '\f011';
+					color: #737774;
+					font-size: 70px;"><i class="fa fa-power-off"></i></button></a> 
+			{% endif %}	 
+		</h3> 
+	  <div class="ct-chart ct-series-a ct-major-sixth"></div>
+	  </div>
+	  <div class="w3-panel w3-padding-large">
+		<div class="w3-container w3-white w3-card w3-hover-shadow w3-half w3-section w3-round-large">
+		  <h3>
+			Temperature
+		  </h3> 
+		  <div class="ct-chart ct-series-a ct-major-sixth"></div>
+		  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard button</title>
+    <link rel="stylesheet" href='../static/style.css'/> 
+    <link rel="stylesheet" href="btn_stylee.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/v4-font-face.min.css">
+</head>
+<body>
+    
+		<h2> Actuator Status & Control </h2> 
+		<h3> RED LED ==>  {{ ledRed  }}  ==>   
+			{% if  ledRed   == 1 %} 
+				<a href="/ledRed/off"class="button">TURN OFF</a> 
+			{% else %} 
+				<a href="/ledRed/on" class="button">TURN ON</a>  
+			{% endif %}	 
+		</h3> 
+		<h3> YLW LED ==>  {{ ledYlw  }}  ==>   
+			{% if  ledYlw   == 1 %} 
+				<a href="/ledYlw/off"class="button">TURN OFF</a> 
+			{% else %} 
+				<a href="/ledYlw/on" class="button">TURN ON</a>  
+			{% endif %}	 
+		</h3> 
+		<h3> GRN LED ==>  {{ ledGrn  }}  ==>   
+			{% if  ledGrn   == 1 %} 
+				<a href="/ledGrn/off"class="button" type="checkbox">TURN OFF</a> 
+			{% else %} 
+				<a href="/ledGrn/on" class="button" type="checkbox">TURN ON</a>  
+			{% endif %}	 
+		</h3> 
+</body>
+</html>
